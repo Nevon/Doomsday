@@ -14,7 +14,7 @@
     <property name="version">0.1</property>
     <property name="copyright" translatable="yes">(c) 2010 Tommy Brunn</property>
     <property name="authors">Tommy Brunn</property>
-    <property name="logo_icon_name">cloud-up-idle</property>
+    <property name="logo_icon_name">gnome-panel-clock</property>
     <property name="wrap_license">True</property>
     <signal name="response" handler="on_aboutdialog_close"/>
     <signal name="delete_event" handler="on_aboutdialog_close"/>
@@ -40,6 +40,8 @@
     </child>
   </object>
   <object class="GtkWindow" id="dateselect">
+    <property name="title" translatable="yes">Set target date</property>
+    <property name="icon_name">gnome-panel-clock</property>
     <signal name="delete_event" handler="on_dateselect_close"/>
     <child>
       <object class="GtkAlignment" id="alignment1">
