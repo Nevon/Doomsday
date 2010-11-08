@@ -1,0 +1,10 @@
+Doomsday is a GNOME panel applet for counting down to an event.
+
+To build and use, first download the source code, get rid of the .git 
+directory and this README file, then do:
+
+	cd ..
+	dpkg --build <dirname> doomsday-VERSION_all.deb
+	
+Before you can add it to your panel, you have to either relog or kill 
+the panel process. 

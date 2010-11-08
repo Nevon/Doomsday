@@ -58,7 +58,7 @@ class DoomsdayApplet(gnomeapplet.Applet):
 		
 		#Initialize gtk.Builder and load our glade file
 		self.builder = gtk.Builder()
-		self.builder.add_from_file("ui.xml")
+		self.builder.add_from_file( os.path.join( os.path.abspath( os.path.dirname(sys.argv[0]) ), "ui.xml" ) )
 		
 		#get the objects we need from the glade file
 		self.about = self.builder.get_object("aboutdialog")
