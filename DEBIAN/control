@@ -1,0 +1,8 @@
+Package: doomsday
+Version: 0.1
+Section: misc
+Maintainer: Tommy Brunn <tommy.brunn@gmail.com>
+Architecture: all
+Depends: python
+Description: Panel applet for counting down to an event.
+  
