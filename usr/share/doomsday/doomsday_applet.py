@@ -106,7 +106,7 @@ class DoomsdayApplet(gnomeapplet.Applet):
 		self.applet.show_all()
 		
 		if self.checkbutton.get_active():
-			gobject.timeout_add(5*1000, self.update_countdown)
+			gobject.timeout_add(30*1000, self.update_countdown)
 		
 	def set_target(self, year, month, day, hour, minute, second):
 		"""Sets the date target to count down to."""
@@ -122,7 +122,7 @@ class DoomsdayApplet(gnomeapplet.Applet):
 			#Add one to the month because the calendar and the datetime
 			#object count the months differently.
 			self.set_target(date[0], self.get_month(), date[2], int(self.hourspin.get_value()), int(self.minutespin.get_value()), int(self.secondspin.get_value()))
-			gobject.timeout_add(5*1000, self.update_countdown)
+			gobject.timeout_add(30*1000, self.update_countdown)
 		else:
 			self.label.set_text("Click to add date")
 			
